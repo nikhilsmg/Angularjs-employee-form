@@ -1,0 +1,58 @@
+[
+    {
+        "name":"nikhil",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"Software Engineer",
+        "email":"nikhilsshimogga@gmail.com"
+    },
+    {
+        "name":"raj",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"Software Engineer",
+        "email":"raja@gmail.com"
+    },
+    {
+        "name":"ak",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"network Engineer",
+        "email":"ak@gmail.com"
+    },
+    {
+        "name":"tim",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"hadoop Engineer",
+        "email":"tim@gmail.com"
+    },
+    {
+        "name":"mak",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"java dev",
+        "email":"mak@gmail.com"
+    },
+    {
+        "name":"sam",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"devops",
+        "email":"sam@gmail.com"
+    },
+    {
+        "name":"mike",
+        "id":1,
+        "salary":50000,
+        "date":"01-01-2017",
+        "designation":"front end dev",
+        "email":"mike@gmail.com"
+    }
+]

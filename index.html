@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="myCtrl">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-4" ng-repeat="emp in employee">
+                    <div class="card">
+                        <h4 class="card-title">{{emp.name}}</h4>
+                        <div class="card-body">
+                            <p class="card-text">{{emp.id}}</p>
+                            <p class="card-text">{{emp.salary}}</p>
+                            <p class="card-text">{{emp.date}}</p>
+                            <p class="card-text">{{emp.designation}}</p>
+                            <p class="card-text">{{emp.email}}</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Item</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Title:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" ng-model="empp.name"> 
+          </div>
+          <div class="form-group">
+            <label for="id">Id:</label>
+            <input type="text" class="form-control" id="id" placeholder="Enter id" name="id" ng-model="empp.id"> 
+          </div>
+          <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="text" class="form-control" id="salary" placeholder="Enter salary" name="salary" ng-model="empp.salary"> 
+          </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="text" class="form-control" id="date" placeholder="Enter date" name="date" ng-model="empp.date"> 
+          </div>
+          <div class="form-group">
+            <label for="designation">Designation:</label>
+            <input type="text" class="form-control" id="designation" placeholder="Enter designation" name="designation" ng-model="empp.designation"> 
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" ng-model="empp.email"> 
+          </div>
+              <!-- saveClassified() sends the ng-model data i.e., classifiedd -->
+          <button type="submit" class="btn btn-primary" ng-click="saveEmployee(empp)" >Save</button>
+          <!-- <button type="submit" class="btn btn-primary" ng-click="saveEdited()" ng-show="showEdit">Save-Edit</button>
+          <button type="reset" class="btn btn-info" ng-show="!showEdit">Reset</button>
+          <button class="btn btn-danger" onclick="closeNav()">Cancel</button>-->
+        </form>
+      </div>
+    
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
